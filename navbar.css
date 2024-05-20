@@ -79,19 +79,23 @@
 
     .navbar .nav-items.active {
         height: fit-content;
-        padding-left: 0;
+        padding: 20px;
         opacity: 1;
         transition: all ease .3s;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
     }
 
-    .navbar .nav-items.active li {
-        width: 100% !important;
-        background-color: #c0c0c0;
-        padding: 20px;
+    .navbar .nav-items.active .nav-link {
+        transition: all ease .3s;
+
     }
 
-    .navbar .nav-items .nav-link:hover {
+    .navbar .nav-items.active .nav-link:hover {
+        padding: 20px 40px;
         background-color: rgb(223, 223, 223);
         transition: all ease .3s;
     }
+
 }
