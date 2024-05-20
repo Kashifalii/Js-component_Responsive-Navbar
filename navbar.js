@@ -21,4 +21,14 @@ let collapseOpen = document.getElementById("collapseOpen");
 
 collapseOpen.addEventListener("click", () => {
     navItems.classList.toggle("active");
+
+    const navlink = document.querySelector(".nav-link");
+
+    if (navItems.classList.contains("active")) {
+        navItems.style.display = "flex";
+        navItems.style.flexDirection = "column";
+        navItems.style.gap = "70px";
+        navlink.style.backgroundColor = "red";
+        navlink.style.padding = "0px";
+    }
 });
